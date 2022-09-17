@@ -37,7 +37,7 @@ const { Globals, Resources } = yamlParse(
 const GlobalFunction = Globals?.Function ?? {}
 
 // Where my function source lives
-const handlerPath = './src/handlers'
+const handlerPath = './src/lambdas'
 
 const entries = Object.values(Resources)
     // Take only the Lambda function resources
