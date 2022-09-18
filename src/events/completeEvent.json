@@ -1,5 +1,5 @@
 {
-    "body": "{\n    \"login\": \"ross\",\n    \"password\": \"jackson\"\n}",
+    "body": "{\"key1\": \"val1\", \"key2\": \"val2\"}",
     "headers": {
         "Accept": "*/*",
         "Accept-Encoding": "gzip, deflate, br",
@@ -8,8 +8,9 @@
         "Content-Length": "50",
         "Content-Type": "application/json",
         "Host": "localhost:3000",
-        "Postman-Token": "ed91a555-d7bd-455b-aad5-2be8976b8e0b",
+        "Pi-Project-Schema": "icd_versioning",
         "User-Agent": "PostmanRuntime/7.29.2",
+        "X-Correlation-Id": "a137db76-61a0-4166-b893-d5df4d963452",
         "X-Forwarded-Port": "3000",
         "X-Forwarded-Proto": "http"
     },
@@ -23,14 +24,15 @@
         "Content-Length": ["50"],
         "Content-Type": ["application/json"],
         "Host": ["localhost:3000"],
-        "Postman-Token": ["ed91a555-d7bd-455b-aad5-2be8976b8e0b"],
+        "Pi-Project-Schema": ["icd_versioning"],
         "User-Agent": ["PostmanRuntime/7.29.2"],
+        "X-Correlation-Id": ["a137db76-61a0-4166-b893-d5df4d963452"],
         "X-Forwarded-Port": ["3000"],
         "X-Forwarded-Proto": ["http"]
     },
     "multiValueQueryStringParameters": null,
     "path": "/auth/sign-in",
-    "pathParameters": { "proxy": "sign-in" },
+    "pathParameters": { "id": "1234" },
     "queryStringParameters": null,
     "requestContext": {
         "accountId": "123456789012",
@@ -50,7 +52,7 @@
             "userAgent": "Custom User Agent String",
             "userArn": null
         },
-        "path": "/auth/{proxy+}",
+        "path": "/auth/sign-in",
         "protocol": "HTTP/1.1",
         "requestId": "be7e756c-a5bb-45a6-aeef-9f77284316d9",
         "requestTime": "17/Sep/2022:23:29:25 +0000",

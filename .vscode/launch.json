@@ -16,7 +16,7 @@
             "lambda": {
                 "runtime": "nodejs16.x",
                 "payload": {
-                    "path": "${workspaceFolder}/src/lambdas/events/auth/signInEvent.json"
+                    "path": "${workspaceFolder}/src/events/auth/signInEvent.json"
                 }
             }
         }

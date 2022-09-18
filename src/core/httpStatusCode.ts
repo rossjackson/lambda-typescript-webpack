@@ -5,4 +5,5 @@ export const httpStatusCode = {
     forbidden: 403,
     notFound: 404,
     methodNotAllowed: 405,
+    internalServerError: 500,
 }

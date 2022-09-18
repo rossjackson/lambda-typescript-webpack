@@ -18,22 +18,32 @@ Resources:
             CodeUri: build/auth
             Handler: auth.handler
             Events:
-                Hello:
+                SignIn:
                     Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
                     Properties:
-                        Path: /auth/{proxy+}
-                        Method: any
+                        Path: /auth/sign-in
+                        Method: post
+                Refresh:
+                    Type: Api
+                    Properties:
+                        Path: /auth/refresh
+                        Method: get
     UserFunction:
         Type: AWS::Serverless::Function
         Properties:
             CodeUri: build/user
             Handler: user.handler
             Events:
-                Goodbye:
+                Detail:
                     Type: Api
                     Properties:
-                        Path: /user/{proxy+}
-                        Method: any
+                        Path: /user
+                        Method: get
+                Projects:
+                    Type: Api
+                    Properties:
+                        Path: /user/projects
+                        Method: get
 
 Outputs:
     # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function

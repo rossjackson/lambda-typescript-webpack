@@ -1,0 +1,12 @@
+{
+    "body": "{\n    \"login\": \"userA\",\n    \"password\": \"userAPassword\"\n}",
+    "httpMethod": "POST",
+    "queryStringParameters": null,
+    "path": "/user",
+    "headers": {
+        "Host": "localhost:3000",
+        "Pi-Project-Schema": "icd_versioning",
+        "User-Agent": "PostmanRuntime/7.29.2",
+        "X-Correlation-Id": "a137db76-61a0-4166-b893-d5df4d963452"
+    }
+}
